@@ -17,5 +17,5 @@ docker run -it -v $(pwd)/proto:/proto --entrypoint bash  grpc-gateway
 create gateway
 
 ```bash
- docker run -it -v $(pwd)/proto:/proto -v $(pwd)/output:/output grpc-gateway /proto/simple_message.proto
+docker run -it -v $(pwd)/proto:/proto -v $(pwd)/output:/output grpc-gateway /proto/simple_message.proto
 ```
