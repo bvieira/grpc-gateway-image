@@ -1,0 +1,12 @@
+syntax = "proto3";
+option go_package = "grpc/example/sm";
+
+package grpc.example.sm;
+
+message SimpleMessage {
+  string value = 1;
+}
+
+service SimpleMessageEchoService {
+  rpc Echo(SimpleMessage) returns (SimpleMessage) {}
+}
